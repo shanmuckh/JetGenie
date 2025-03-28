@@ -74,7 +74,7 @@ export function AuthorizePayment({
         Use your saved information for this transaction
       </div>
       <div className="text-muted-foreground text-sm sm:text-base">
-        Enter the magic word to authorize payment. Hint: It rhymes with bercel.
+        Enter the magic word to authorize payment. 
       </div>
 
       <Input
