@@ -1,61 +1,269 @@
-<a href="https://chat.vercel.ai/">
-  <img alt="Next.js 14 and App Router-ready AI chatbot." src="app/(chat)/opengraph-image.png">
-  <h1 align="center">Next.js Gemini Chatbot</h1>
-</a>
+# JetGeine ✈️  
+### An Automated Flight Ticket Booking Platform Built With Next.js and the AI SDK
 
-<p align="center">
-  An Open-Source AI Chatbot Template Built With Next.js and the AI SDK by Vercel.
-</p>
+JetGeine is an AI-powered flight booking platform designed to simplify the travel search and reservation experience. Built on a modern Next.js template, it combines intelligent conversation, streamlined booking workflows, secure authentication, and persistent user data to help users discover and reserve flights faster.
 
-<p align="center">
-  <a href="#features"><strong>Features</strong></a> ·
-  <a href="#model-providers"><strong>Model Providers</strong></a> ·
-  <a href="#deploy-your-own"><strong>Deploy Your Own</strong></a> ·
-  <a href="#running-locally"><strong>Running locally</strong></a>
-</p>
-<br/>
+---
 
-## Features
+## 📸 Screenshots
 
-- [Next.js](https://nextjs.org) App Router
-  - Advanced routing for seamless navigation and performance
-  - React Server Components (RSCs) and Server Actions for server-side rendering and increased performance
-- [AI SDK](https://sdk.vercel.ai/docs)
-  - Unified API for generating text, structured objects, and tool calls with LLMs
-  - Hooks for building dynamic chat and generative user interfaces
-  - Supports Google (default), OpenAI, Anthropic, Cohere, and other model providers
-- [shadcn/ui](https://ui.shadcn.com)
-  - Styling with [Tailwind CSS](https://tailwindcss.com)
-  - Component primitives from [Radix UI](https://radix-ui.com) for accessibility and flexibility
-- Data Persistence
-  - [Vercel Postgres powered by Neon](https://vercel.com/storage/postgres) for saving chat history and user data
-  - [Vercel Blob](https://vercel.com/storage/blob) for efficient object storage
-- [NextAuth.js](https://github.com/nextauthjs/next-auth)
-  - Simple and secure authentication
+### Signin Page
+![JetGeine Home](assets/signin.png)
 
-## Model Providers
+### Flight Search Interface
+![Flight Search](assets/flightsearch.jpeg)
 
-This template ships with Google Gemini `gemini-1.5-pro` models as the default. However, with the [AI SDK](https://sdk.vercel.ai/docs), you can switch LLM providers to [OpenAI](https://openai.com), [Anthropic](https://anthropic.com), [Cohere](https://cohere.com/), and [many more](https://sdk.vercel.ai/providers/ai-sdk-providers) with just a few lines of code.
+### Booking Flow
+![Booking Flow](assets/seat1.jpeg)
 
-## Deploy Your Own
+![Booking Flow](assets/seat2.jpeg)
 
-You can deploy your own version of the Next.js AI Chatbot to Vercel with one click:
+### Confirmation
+![Trip Confirmation](assets/confirmation.jpeg)
 
-[![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/clone?repository-url=https%3A%2F%2Fgithub.com%2Fvercel-labs%2Fgemini-chatbot&env=AUTH_SECRET,GOOGLE_GENERATIVE_AI_API_KEY&envDescription=Learn%20more%20about%20how%20to%20get%20the%20API%20Keys%20for%20the%20application&envLink=https%3A%2F%2Fgithub.com%2Fvercel-labs%2Fgemini-chatbot%2Fblob%2Fmain%2F.env.example&demo-title=Next.js%20Gemini%20Chatbot&demo-description=An%20Open-Source%20AI%20Chatbot%20Template%20Built%20With%20Next.js%20and%20the%20AI%20SDK%20by%20Vercel.&demo-url=https%3A%2F%2Fgemini.vercel.ai&stores=[{%22type%22:%22postgres%22},{%22type%22:%22blob%22}])
+### Payment Details
+![Payment Details](assets/paymentdetails.jpeg)
 
-## Running locally
+### Payment Verification
+![Payment Verification](assets/paymentverified.jpeg)
 
-You will need to use the environment variables [defined in `.env.example`](.env.example) to run Next.js AI Chatbot. It's recommended you use [Vercel Environment Variables](https://vercel.com/docs/projects/environment-variables) for this, but a `.env` file is all that is necessary.
+###  Boarding Pass
+![Boarding Pass](assets/boardingpass.jpeg)
+---
 
-> Note: You should not commit your `.env` file or it will expose secrets that will allow others to control access to your various Google Cloud and authentication provider accounts.
+## ✨ Features
 
-1. Install Vercel CLI: `npm i -g vercel`
-2. Link local instance with Vercel and GitHub accounts (creates `.vercel` directory): `vercel link`
-3. Download your environment variables: `vercel env pull`
+- **AI-Powered Flight Assistance**  
+  Search, compare, and guide users through flight booking using natural language.
+
+- **Automated Booking Workflow**  
+  Reduces manual effort by streamlining the journey from search to reservation.
+
+- **Modern App Router Architecture**  
+  Built with the Next.js App Router for fast navigation and scalable routing.
+
+- **React Server Components & Server Actions**  
+  Improves performance and enables cleaner server-side interactions.
+
+- **Unified AI SDK Integration**  
+  Supports text generation, structured outputs, and tool calls for intelligent travel experiences.
+
+- **Multiple Model Providers**  
+  Compatible with Google Gemini, OpenAI, Anthropic, Cohere, and more.
+
+- **Beautiful UI with shadcn/ui**  
+  Accessible, elegant components styled with Tailwind CSS.
+
+- **Secure Authentication**  
+  Powered by NextAuth.js for safe login and session management.
+
+- **Persistent Data Storage**  
+  Uses Vercel Postgres powered by Neon for user data, booking history, and saved preferences.
+
+- **Blob Storage Support**  
+  Uses Vercel Blob for efficient file and asset storage.
+
+- **Deployment Ready**  
+  Can be deployed to Vercel with minimal setup.
+
+---
+
+# 🚀 Getting Started
+
+Get JetGeine running locally in just a few minutes.
+
+## Prerequisites
+
+Before you begin, make sure you have the following installed:
+
+* **Node.js** `v18` or later
+* **pnpm** *(recommended)*, npm, or Yarn
+* **Git**
+* **Vercel CLI** *(optional, recommended for environment management)*
+
+---
+
+## 📥 Clone the Repository
+
+```bash
+git clone https://github.com/shanmuckh/JetGenie.git
+cd jetgeine
+```
+
+---
+
+## 📦 Install Dependencies
+
+Using pnpm (recommended):
 
 ```bash
 pnpm install
+```
+
+Or using npm:
+
+```bash
+npm install
+```
+
+Or using Yarn:
+
+```bash
+yarn install
+```
+
+---
+
+## ⚙️ Configure Environment Variables
+
+Create a new `.env.local` file in the project root.
+
+You can copy the provided template:
+
+```bash
+cp .env.example .env.local
+```
+
+Fill in your credentials:
+
+```env
+# AI Providers
+GOOGLE_GENERATIVE_AI_API_KEY=
+OPENAI_API_KEY=
+ANTHROPIC_API_KEY=
+COHERE_API_KEY=
+
+# Authentication
+AUTH_SECRET=
+AUTH_URL=
+
+# Database
+POSTGRES_URL=
+POSTGRES_PRISMA_URL=
+POSTGRES_URL_NON_POOLING=
+
+# Object Storage
+BLOB_READ_WRITE_TOKEN=
+```
+---
+
+## ▶ Start the Development Server
+
+```bash
 pnpm dev
 ```
 
-Your app template should now be running on [localhost:3000](http://localhost:3000/).
+Visit:
+
+```
+http://localhost:3000
+```
+
+The application will automatically reload whenever you make changes.
+
+---
+
+# 🧠 AI Model Providers
+
+JetGeine is powered by the **Vercel AI SDK**, making it easy to switch between leading Large Language Models without changing your application architecture.
+
+Supported providers include:
+
+* ✅ Google Gemini *(Default)*
+* ✅ OpenAI
+* ✅ Anthropic
+* ✅ Cohere
+* ✅ Groq
+* ✅ xAI
+* ✅ Together AI
+* ✅ Mistral AI
+* ✅ Any AI SDK-compatible provider
+
+Switching providers typically requires only updating your API key and model configuration.
+
+---
+
+# 🔐 Authentication
+
+JetGeine uses **NextAuth.js** to provide enterprise-grade authentication.
+
+Features include:
+
+* Secure Sign-In
+* Protected Routes
+* Session Management
+* OAuth Support
+* Persistent User Sessions
+* User-specific Booking History
+* Role-based Access *(optional)*
+
+---
+
+# 🗄️ Data Persistence
+
+JetGeine stores user and booking data using modern cloud-native services.
+
+### 🛢️ Vercel Postgres (Powered by Neon)
+
+Used for:
+
+* User Accounts
+* Booking Records
+* Flight Search History
+* Saved Trips
+* Travel Preferences
+* Session Metadata
+
+---
+
+### ☁️ Vercel Blob Storage
+
+Used for:
+
+* Uploaded Assets
+* User Files
+* Media Storage
+* Static Objects
+* Travel Documents
+
+---
+
+# 🏗️ Architecture
+
+```
+                 ┌────────────────────┐
+                 │      Next.js        │
+                 └─────────┬───────────┘
+                           │
+          ┌────────────────┼────────────────┐
+          │                │                │
+          ▼                ▼                ▼
+    AI SDK Layer      NextAuth.js     Server Actions
+          │                │                │
+          ▼                ▼                ▼
+ Google Gemini      User Sessions     Booking Logic
+          │
+          ▼
+  Vercel Postgres + Blob Storage
+```
+
+---
+
+# 💻 Development Scripts
+
+| Command           | 
+| ----------------- | 
+| `pnpm dev`        | 
+| `pnpm build`      | 
+| `pnpm start`      | 
+| `pnpm lint`       | 
+| `pnpm format`     | 
+| `pnpm type-check` | 
+
+---
+
+
+
+---
+
+
